@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    width: 100%;
+}
+
+.limite {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* NAV */
+nav {
+    padding: 20px;
+}
+
+nav>.limite {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+/* HEADER */
+
+header>#algoNuevo {
+    background-image: url(img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    color: white;
+}
+
+#algoNuevo>div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+}
+
+#algoNuevo>div>h1 {
+    font-size: 40px;
+    font-weight: lighter;
+    margin-bottom: 50px;
+}
+
+#algoNuevo>div>p {
+    font-size: 17px;
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+
+#algoNuevo>div>#buscador {
+    display: flex;
+    background-color: white;
+    width: 40%;
+    align-items: center;
+}
+
+#algoNuevo>div>#buscador>input {
+    height: 40px;
+    font-size: 17px;
+    border: 0;
+    flex-grow: 1;
+}
+
+
+/* IDEAS */
+
+#ideas {
+    background: linear-gradient(to right, #64095e, #e55b5f);
+    padding: 40px 0;
+}
+
+#ideas>.limite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.ide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 200px;
+    color: white;
+}
+
+.ide>img {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+.ide p {
+    margin: 5px 0;
+}
+
+
+/* MAIN */
+
+main h1 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    padding: 20px;
+}
+
+#art {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: space-between;
+}
+
+.articulo {
+    border: 1px solid rgb(186, 185, 185);
+    text-align: left;
+    flex: 1 1 calc(25% - 16px);
+}
+
+.articulo .imarr {
+    width: 100%;
+}
+
+.boton {
+    background: deepskyblue;
+    border: 0px;
+    
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: black;
+    color: white;
+
+}
+
+footer .limite {
+    padding: 20px;
+    display: flex;
+}
+
+footer ul {
+    list-style: none;
+    margin-right: 10%;
+}
+
+footer li {
+    font-weight: 100;
+}
