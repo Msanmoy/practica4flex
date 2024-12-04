@@ -1,0 +1,113 @@
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+// Variables
+$color-degradado: linear-gradient(to right, #4A00E0, #8E2DE2)
+$ancho-maximo: 1200px
+$margin-cursos: 16px
+
+// Base
+body
+  margin: 0
+  font-family: Arial, sans-serif
+
+
+// Header
+header 
+  text-align: center
+  background: $color-degradado
+  padding: 20px
+  color: white
+
+
+// Menú
+.menu 
+  background: $color-degradado
+  ul 
+    display: flex
+    flex-direction: column
+    list-style: none
+    padding: 0
+    li 
+      padding: 10px
+      text-align: center
+      a 
+        color: white
+        text-decoration: none
+        &:hover 
+          text-decoration: underline
+        
+      
+    
+  
+
+
+// Estilos para pantallas mayores a 768px
+@media (min-width: 768px) 
+  .menu ul 
+    flex-direction: row
+    justify-content: space-around
+  
+
+
+// Imagen de cabecera
+.imagen-cabecera 
+  background-image: url(../img/URL_DE_LA_IMAGEN.jpg)
+  background-size: cover
+  background-position: center
+  height: 400px
+
+
+// Cursos
+.cursos 
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-around
+  gap: $margin-cursos
+
+  .curso 
+    background: #f4f4f4
+    border: 1px solid #ccc
+    padding: 20px
+    text-align: center
+    flex: 1 1 calc(100% - $margin-cursos)
+  
+
+
+@media (min-width: 280px) 
+  .curso 
+    flex: 1 1 calc(50% - $margin-cursos)
+  
+
+
+@media (min-width: 480px) 
+  .curso 
+    flex: 1 1 calc(33.33% - $margin-cursos)
+  
+
+
+@media (min-width: 768px) 
+  .curso 
+    flex: 1 1 calc(25% - $margin-cursos)
+  
+
+
+// Footer
+footer 
+  display: flex
+  flex-wrap: wrap
+  .columna 
+    flex: 1 1 100%
+    padding: 20px
+    background: #333
+    color: white
+  
+
+
+@media (min-width: 768px) 
+  footer .columna 
+    flex: 1 1 50%
+  
+
