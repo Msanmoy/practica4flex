@@ -1,97 +1,142 @@
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
+  width: 100%;
 }
 
-header {
-  text-align: center;
-  background: linear-gradient(to right, #4A00E0, #8E2DE2);
+.limite {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+nav {
   padding: 20px;
+}
+nav .limite {
+  display: flex;
+  justify-content: space-between;
+}
+
+header #algoNuevo {
+  background: url(../img/hero.jpg) center/cover no-repeat;
+  height: 400px;
   color: white;
 }
-
-.menu {
-  background: linear-gradient(to right, #4A00E0, #8E2DE2);
-}
-.menu ul {
+header #algoNuevo > div {
   display: flex;
   flex-direction: column;
-  list-style: none;
-  padding: 0;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100%;
 }
-.menu ul li {
-  padding: 10px;
+header #algoNuevo > div h1 {
+  font-size: 40px;
+  font-weight: 100;
+  margin-bottom: 50px;
+}
+header #algoNuevo > div p {
+  font-size: 17px;
+  font-weight: lighter;
+  margin-bottom: 10px;
+}
+header #algoNuevo > div #buscador {
+  display: flex;
+  background-color: white;
+  width: 40%;
+  align-items: center;
+}
+header #algoNuevo > div #buscador input {
+  height: 40px;
+  font-size: 17px;
+  border: none;
+  flex-grow: 1;
+  padding-left: 10px;
+}
+
+#ideas {
+  background: linear-gradient(to right, #64095e, #e55b5f);
+  padding: 40px 0;
+}
+#ideas .limite {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+#ideas .ide {
   text-align: center;
-}
-.menu ul li a {
+  max-width: 200px;
   color: white;
-  text-decoration: none;
 }
-.menu ul li a:hover {
-  text-decoration: underline;
-}
-
-@media (min-width: 768px) {
-  .menu ul {
-    flex-direction: row;
-    justify-content: space-around;
-  }
-}
-.imagen-cabecera {
-  background-image: url(../img/URL_DE_LA_IMAGEN.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 400px;
+#ideas .ide img {
+  width: 60px;
+  margin-bottom: 10px;
 }
 
-.cursos {
+main h1 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 900;
+  padding: 20px;
+}
+main #art {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
   gap: 16px;
+  justify-content: space-between;
 }
-.cursos .curso {
-  background: #f4f4f4;
-  border: 1px solid #ccc;
+main .articulo {
+  border: 1px solid rgb(186, 185, 185);
+  text-align: left;
+  flex: 1 1 calc(25% - 16px);
+  height: 100%;
+  border-radius: 5px;
+}
+main .articulo .centrado {
   padding: 20px;
+}
+main .articulo .imarr {
+  width: 100%;
+}
+main .negrita {
+  font-size: large;
+  font-weight: bolder;
+  text-align: right;
+}
+main .boto {
+  margin-top: 20px;
   text-align: center;
-  flex: 1 1 calc(100% - 16px);
+}
+main .boto .boton {
+  background: deepskyblue;
+  border: none;
+  color: white;
+  height: 30px;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-@media (min-width: 280px) {
-  .curso {
-    flex: 1 1 calc(50% - 16px);
-  }
-}
-@media (min-width: 480px) {
-  .curso {
-    flex: 1 1 calc(33.33% - 16px);
-  }
-}
-@media (min-width: 768px) {
-  .curso {
-    flex: 1 1 calc(25% - 16px);
-  }
-}
 footer {
-  display: flex;
-  flex-wrap: wrap;
-}
-footer .columna {
-  flex: 1 1 100%;
-  padding: 20px;
-  background: #333;
+  margin-top: 50px;
+  background-color: black;
   color: white;
 }
-
-@media (min-width: 768px) {
-  footer .columna {
-    flex: 1 1 50%;
-  }
+footer .limite {
+  padding: 20px;
+  display: flex;
+}
+footer ul {
+  list-style: none;
+  margin-right: 10%;
+}
+footer ul li {
+  font-weight: 100;
+  margin-bottom: 8px;
 }/*# sourceMappingURL=estilos.css.map */
