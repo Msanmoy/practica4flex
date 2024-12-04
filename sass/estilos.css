@@ -60,7 +60,7 @@ header #algoNuevo > div #buscador input {
 }
 
 #ideas {
-  background: linear-gradient(to right, #64095e, #e55b5f);
+  background: linear-gradient(to right, deepskyblue, #64095e);
   padding: 40px 0;
 }
 #ideas .limite {
@@ -114,7 +114,7 @@ main .boto {
   text-align: center;
 }
 main .boto .boton {
-  background: deepskyblue;
+  background-color: deepskyblue;
   border: none;
   color: white;
   height: 30px;
